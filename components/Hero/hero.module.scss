@@ -1,0 +1,58 @@
+@import "../../styles/variable.scss";
+
+.wrapper {
+  display: flex;
+  height: 350px;
+  justify-content: space-between;
+  margin-top: 50px;
+
+  .left_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & h2 {
+      font-size: 48px;
+      font-family: "Campton Bold", sans-serif;
+      color: $color-secondary;
+      margin: 0;
+    }
+
+    & p {
+      font-size: 16px;
+      font-family: "Campton Light", sans-serif;
+      color: $color-secondary;
+    }
+
+    & button {
+      width: 200px;
+      height: 50px;
+      border-radius: 10px;
+      background: $color-primary;
+      border: none;
+      font-family: "Campton Bold", sans-serif;
+      color: $color-white;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-hover;
+        transition: 0.3s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    }
+  }
+
+  .right_side {
+    width: 40%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .top_images {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

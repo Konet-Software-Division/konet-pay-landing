@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Campton Black";
+  src: local("Campton"), url("Campton-Black.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Campton Bold";
+  src: local("Campton"), url("Campton-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Campton semi-bold";
+  src: local("Campton"), url("Campton-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Campton Light";
+  src: local("Campton"), url("Campton-Light.ttf") format("truetype");
+}
