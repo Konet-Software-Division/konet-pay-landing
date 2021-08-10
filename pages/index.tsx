@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar/Navbar";
 import Hero from "../components/Hero/Hero";
 import styles from "../styles/Home.module.scss";
 import SimplicitySection from "../components/SimplicitySection";
+import CallToAction from "../components/CallToAction/CallToAction";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
         </div>
       </div>
       <SimplicitySection />
+      <CallToAction />
+      <Footer />
     </>
   );
 }

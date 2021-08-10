@@ -1,0 +1,40 @@
+@import "../../styles/variable.scss";
+
+.wrapper {
+  background: $color-primary;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+
+  .left_side {
+    color: $color-white;
+
+    h1 {
+      font-family: "Campton Bold", sans-serif;
+    }
+    p {
+      font-family: "Campton Light", sans-serif;
+    }
+  }
+
+  .right_side {
+    button {
+      width: 200px;
+      height: 50px;
+      background: $color-white;
+      color: $color-primary;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-family: "Campton Light" sans-serif;
+
+      &:hover {
+        opacity: 0.9;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}

@@ -1,8 +1,31 @@
+import React, { useEffect, useState } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
+  let listener: any = null;
+  const [scrollState, setScrollState] = useState("top");
+
+  useEffect(() => {
+    listener = document.addEventListener("scroll", (e) => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 120) {
+        if (scrollState !== "amir") {
+          setScrollState("amir");
+        }
+      } else {
+        if (scrollState !== "top") {
+          setScrollState("top");
+        }
+      }
+    });
+    return () => {
+      document.removeEventListener("scroll", listener);
+    };
+  }, [scrollState]);
+
   const dropdownDetails = [
     {
       id: 1,
@@ -61,7 +84,7 @@ const Navbar = () => {
                 <div className={styles.dropdown_items}>
                   {item.icon}
                   <div className={styles.dropdown_text}>
-                    <p style={{ fontWeight: "bold", fontSize: 14 }}>
+                    <p style={{ fontWeight: "bold", fontSize: 12 }}>
                       {item.title}
                     </p>
 

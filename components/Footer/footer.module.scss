@@ -1,0 +1,45 @@
+@import "../../styles/variable.scss";
+
+.wrapper {
+  margin: 0 10%;
+  padding-top: 50px;
+
+  .column_wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+
+      & h3 {
+        color: $color-secondary;
+        font-size: 22px;
+        font-family: "Campton Bold", sans-serif;
+      }
+
+      .links_wrapper {
+        display: flex;
+        flex-direction: column;
+
+        a,
+        p {
+          font-size: 14px;
+          font-family: "Campton Light", sans-serif;
+          color: $color-secondary;
+          margin-bottom: 10px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyright_text {
+  margin-top: 40px;
+  font-family: "Campton Light", sans-serif;
+  font-size: 14px;
+}

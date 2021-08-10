@@ -1,12 +1,12 @@
 @import "../../styles/variable.scss";
 
 .wrapper {
-  height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Campton semi-bold", sans-serif;
+  z-index: 3;
 
   .menu {
     position: relative;
