@@ -1,0 +1,64 @@
+@import "../../styles/variable.scss";
+
+.wrapper {
+  margin: 0 10%;
+
+  .heading {
+    text-align: center;
+    margin-top: 70px;
+
+    h2 {
+      font-size: 36px;
+      font-family: "Campton Bold", sans-serif;
+      color: $color-secondary;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: rgba(13, 35, 51, 1);
+      font-size: 16px;
+      font-family: "Campton Light", sans-serif;
+      margin: 0;
+    }
+  }
+
+  .content {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+
+    .left_side {
+      width: 50%;
+    }
+
+    .right_side {
+      width: 50%;
+      max-width: 500px;
+
+      h2 {
+        color: $color-secondary;
+        font-weight: 700;
+        font-family: "Campton Bold", sans-serif;
+        font-size: 36px;
+      }
+
+      p {
+        color: $color-secondary;
+        font-family: "Campton Light", sans-serif;
+        font-size: 15px;
+      }
+
+      .list {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+
+        .list_items p {
+          display: flex;
+          gap: 10px;
+          font-family: "Campton Bold", sans-serif;
+        }
+      }
+    }
+  }
+}

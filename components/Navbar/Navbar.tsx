@@ -61,10 +61,11 @@ const Navbar = () => {
                 <div className={styles.dropdown_items}>
                   {item.icon}
                   <div className={styles.dropdown_text}>
-                    <p>
-                      <b>{item.title}</b>
+                    <p style={{ fontWeight: "bold", fontSize: 14 }}>
+                      {item.title}
                     </p>
-                    <p>{item.secondaryText}</p>
+
+                    <p style={{ fontSize: 12 }}>{item.secondaryText}</p>
                   </div>
                 </div>
               ))}
