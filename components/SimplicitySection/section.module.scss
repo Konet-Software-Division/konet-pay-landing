@@ -1,12 +1,19 @@
 @import "../../styles/variable.scss";
 
 .wrapper {
-  margin: 0 10%;
   padding-bottom: 60px;
+
+  @media (max-width: 700px) {
+    margin-top: 60px;
+  }
 
   .heading {
     text-align: center;
     margin-top: 70px;
+
+    @media (max-width: 700px) {
+      margin-top: 200px;
+    }
 
     h2 {
       font-size: 36px;
@@ -28,13 +35,27 @@
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+
     .left_side {
       width: 50%;
+
+      @media (max-width: 700px) {
+        width: 100%;
+        align-items: center;
+      }
     }
 
     .right_side {
       width: 50%;
       max-width: 500px;
+
+      @media (max-width: 700px) {
+        width: 100%;
+        align-items: center;
+      }
 
       h2 {
         color: $color-secondary;
@@ -88,13 +109,19 @@
   padding-bottom: 108px;
 
   .container {
-    margin: 0 10%;
     padding-top: 100px;
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+
     .left_section {
       width: 50%;
+      @media (max-width: 700px) {
+        width: 100%;
+      }
       .icon_details_row {
         display: flex;
         max-width: 500px;

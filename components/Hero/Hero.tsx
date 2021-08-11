@@ -6,13 +6,8 @@ const Hero = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.left_side}>
-        <h2>
-          Get seamless payment
-          <br /> experience
-        </h2>
-        <p>
-          Konetpay brings user friendly payments <br /> functionality services.
-        </p>
+        <h2>Get seamless payment experience</h2>
+        <p>Konetpay brings user friendly payments functionality services.</p>
         <button>Get Started</button>
       </div>
       <div className={styles.right_side}>

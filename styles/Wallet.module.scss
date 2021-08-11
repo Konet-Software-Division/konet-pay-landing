@@ -1,0 +1,57 @@
+@import "./variable.scss";
+
+.hero {
+  background: $color-lightBg;
+  height: 500px;
+  padding: 40px 10%;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  position: relative;
+
+  .left_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+
+    & h2 {
+      font-size: 48px;
+      font-family: "Campton Bold", sans-serif;
+      color: $color-secondary;
+      margin-bottom: 20px;
+    }
+
+    & p {
+      font-size: 16px;
+      font-family: "Campton Light", sans-serif;
+      color: $color-secondary;
+      margin: 0;
+    }
+
+    .button_group {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .right_side {
+    display: flex;
+    width: 450px;
+
+    .image_wrapper {
+      width: 300px;
+
+      & img {
+        width: 250px;
+      }
+    }
+
+    .second_image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

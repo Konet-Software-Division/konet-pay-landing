@@ -1,3 +1,5 @@
+import React from "react";
+
 import Head from "next/head";
 
 import Navbar from "../components/Navbar/Navbar";
@@ -8,8 +10,24 @@ import CallToAction from "../components/CallToAction/CallToAction";
 import Footer from "../components/Footer/Footer";
 
 export default function Home() {
+  const [navbar, setNavbar] = React.useState(false);
+
+  const changeNavBackground = () => {
+    if (window.scrollY >= 30) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  if (process.browser) {
+    window.addEventListener("scroll", changeNavBackground);
+  }
   return (
     <>
+      <div className={`${styles.nav_wrapper} ${navbar ? styles.active : ""}`}>
+        <Navbar />
+      </div>
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <Head>
@@ -17,7 +35,7 @@ export default function Home() {
             <meta name="home" content="Home" />
             <link rel="icon" href="/favicon.ico" />
           </Head>
-          <Navbar />
+
           <Hero />
         </div>
       </div>

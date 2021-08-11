@@ -5,27 +5,6 @@ import Image from "next/image";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
-  let listener: any = null;
-  const [scrollState, setScrollState] = useState("top");
-
-  useEffect(() => {
-    listener = document.addEventListener("scroll", (e) => {
-      var scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 120) {
-        if (scrollState !== "amir") {
-          setScrollState("amir");
-        }
-      } else {
-        if (scrollState !== "top") {
-          setScrollState("top");
-        }
-      }
-    });
-    return () => {
-      document.removeEventListener("scroll", listener);
-    };
-  }, [scrollState]);
-
   const dropdownDetails = [
     {
       id: 1,
@@ -34,12 +13,14 @@ const Navbar = () => {
       icon: (
         <Image src="/icons/payment-gateway.svg" width={50} height={50} alt="" />
       ),
+      link: "/payment",
     },
     {
       id: 2,
       title: "E-COMMERCE",
       secondaryText: "Marketplace for grocery home appliances, fashion etc.",
       icon: <Image src="/icons/ecommerce.svg" width={65} height={65} alt="" />,
+      link: "/e-commerce",
     },
     {
       id: 3,
@@ -47,12 +28,14 @@ const Navbar = () => {
       secondaryText:
         "Delight your customers  with a seamless payment experience.",
       icon: <Image src="/icons/pos-icon.svg" width={70} height={70} alt="" />,
+      link: "/POS",
     },
     {
       id: 4,
       title: "DIGITAL WALLET",
       secondaryText: "Send and recieve money seamlessly",
       icon: <Image src="/icons/wallet.svg" width={50} height={50} alt="" />,
+      link: "/wallet",
     },
   ];
   return (
@@ -84,9 +67,7 @@ const Navbar = () => {
                 <div className={styles.dropdown_items}>
                   {item.icon}
                   <div className={styles.dropdown_text}>
-                    <p style={{ fontWeight: "bold", fontSize: 12 }}>
-                      {item.title}
-                    </p>
+                    <Link href={item.link}>{item.title}</Link>
 
                     <p style={{ fontSize: 12 }}>{item.secondaryText}</p>
                   </div>
@@ -106,7 +87,13 @@ const Navbar = () => {
           <p>
             <Link href="/">Sign in</Link>
           </p>
-          <button>Sign Up</button>
+          <button>Get Started</button>
+        </div>
+
+        <div className={styles.burger}>
+          <div className={styles.line1}></div>
+          <div className={styles.line2}></div>
+          <div className={styles.line3}></div>
         </div>
       </nav>
     </header>
