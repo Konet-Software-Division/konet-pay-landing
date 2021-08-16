@@ -55,3 +55,113 @@
     }
   }
 }
+
+.section_two {
+  margin-top: 100px;
+
+  .heading {
+    font-size: 36px;
+    color: $color-secondary;
+    font-family: "Campton Bold", sans-serif;
+    text-align: center;
+  }
+  .section_body {
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+
+    .right_side {
+      width: 50%;
+      .text_box {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+
+        .icon_wrapper {
+          background: $color-primary;
+          height: 50px;
+          width: 100px;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          top: 8px;
+        }
+
+        .text > h2 {
+          font-family: "Campton Bold", sans-serif;
+          color: $color-secondary;
+          font-size: 22px;
+          margin: 0;
+        }
+
+        .text > p {
+          font-family: "Campton light", sans-serif;
+          color: $color-light;
+          font-weight: lighter;
+        }
+      }
+    }
+  }
+}
+
+.section_three {
+  background: $color-lightBg;
+  height: 700px;
+
+  .section_body {
+    margin: 0 10%;
+    padding: 90px 0;
+
+    & h2 {
+      font-size: 36px;
+      font-family: "Campton Bold", sans-serif;
+      color: $color-secondary;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .body_content_row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      .content_box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        margin-bottom: 40px;
+
+        .icon_wrapper {
+          background: $color-primary;
+          height: 50px;
+          width: 60px;
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px;
+        }
+
+        & h3 {
+          font-family: "Campton Bold", sans-serif;
+          font-size: 20px;
+          margin: 0;
+        }
+        & p {
+          font-family: "Campton Light", sans-serif;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
