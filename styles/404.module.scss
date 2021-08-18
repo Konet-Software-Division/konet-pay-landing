@@ -1,0 +1,45 @@
+@import "./variable.scss";
+
+.container {
+  background: $color-lightBg;
+  padding: 0 10%;
+  height: 100%;
+  padding-bottom: 50px;
+
+  .body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .text {
+      display: flex;
+
+      .light_text {
+        font-family: "Campton Light", sans-serif;
+      }
+
+      .bold_text {
+        font-family: "Campton Bold", sans-serif;
+      }
+
+      & p {
+        color: $color-secondary;
+        font-size: 48px;
+      }
+    }
+
+    button {
+      background: $color-primary;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-family: "Campton Light", sans-serif;
+      font-size: 15px;
+    }
+  }
+}

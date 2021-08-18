@@ -27,7 +27,6 @@ const Layout = ({ children, margin }: any) => {
 
       <div className={margin ? styles.body : ""}>{children}</div>
 
-      <CallToAction />
       <Footer />
     </>
   );

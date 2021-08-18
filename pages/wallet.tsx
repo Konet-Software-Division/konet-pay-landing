@@ -142,12 +142,38 @@ const Wallet = () => {
               {featuresContent.map((el) => (
                 <div className={styles.content_box}>
                   <div className={styles.icon_wrapper}>
-                    <Image src={el.icon} alt="" width={30} height={40} />;
+                    <Image src={el.icon} alt="" width={30} height={40} />
                   </div>
                   <h3>{el.title}</h3>
                   <p>{el.subTitle}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+        <div className={styles.call_to_action}>
+          <div className={styles.action_body}>
+            <div className={styles.left_side}>
+              <h2>
+                Send and receive <br />
+                payments easily
+              </h2>
+              <p>
+                Fulfill your financial obligation and ambition without any
+                challenge .
+              </p>
+              <div className={styles.button_wrapper}>
+                <Image src="/images/google-play.svg" width={140} height={80} />
+                <Image src="/images/app-store.svg" width={140} height={80} />
+              </div>
+            </div>
+            <div className={styles.right_side}>
+              <Image
+                src="/images/cta-wallet.png"
+                alt=""
+                width={400}
+                height={300}
+              />
             </div>
           </div>
         </div>
