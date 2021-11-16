@@ -10,7 +10,7 @@ const Error404 = () => {
     <div className={styles.container}>
       <Navbar />
       <div className={styles.body}>
-        <Image src="/images/404.svg" width={600} height={350} />
+        <Image src="/images/404.svg" width={600} height={350} alt="" />
         <div className={styles.text}>
           <p className={styles.light_text}>Oops..</p>
           <p className={styles.bold_text}>We don't have this page</p>

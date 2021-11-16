@@ -26,12 +26,9 @@ const Footer = () => {
         <div className={styles.column}>
           <h3>Legal</h3>
           <div className={styles.links_wrapper}>
-            <Link href="/">Debit Cards</Link>
-            <Link href="/"> Ecommerce</Link>
-            <Link href="/">Online Gaming</Link>
-            <Link href="/">Payment Gateway</Link>
-            <Link href="/">Point of Sale (POS)</Link>
-            <Link href="/">Wallet</Link>
+            <Link href="/">Terms & Condition</Link>
+            <Link href="/">Privacy Policy</Link>
+            <Link href="/">Cookie Policy</Link>
           </div>
         </div>
         <div className={styles.column}>

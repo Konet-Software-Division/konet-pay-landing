@@ -8,7 +8,9 @@ const Hero = () => {
       <div className={styles.left_side}>
         <h2>Get seamless payment experience</h2>
         <p>Konetpay brings user friendly payments functionality services.</p>
-        <button>Get Started</button>
+        <button>
+          <a href="https://konetpay.netlify.app/">Get Started</a>
+        </button>
       </div>
       <div className={styles.right_side}>
         <div className={styles.top_images}>
