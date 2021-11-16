@@ -85,7 +85,7 @@ const Navbar = () => {
 
         <div className={styles.menu_actions}>
           <p>
-            <Link href="/">Sign in</Link>
+            <Link href="https://konetpay.netlify.app/">Sign In</Link>
           </p>
           <button>Get Started</button>
         </div>
