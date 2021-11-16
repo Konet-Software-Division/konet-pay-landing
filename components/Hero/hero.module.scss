@@ -43,6 +43,9 @@
       font-size: 16px;
       cursor: pointer;
 
+      a {
+        color: #fff;
+      }
       &:hover {
         background: $color-hover;
         transition: 0.3s ease-in-out;
